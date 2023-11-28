@@ -2,5 +2,7 @@
 
 Exercício de JavaFX, CRUD básico de adicionar alunos e pesquisá-los.
 
-Execício no PDF
+Utilizando JavaFX, SQL server e POO.
+
+Execício no PDF.
 
