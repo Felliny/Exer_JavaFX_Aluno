@@ -45,7 +45,7 @@ public class AlunoDAOImplementation implements AlunoDAO{
             while (rs.next()){
                 Aluno aluno= new Aluno();
 
-                aluno.setId(String.valueOf(rs.getInt(1)));
+                aluno.setId(rs.getLong(1));
                 aluno.setRa(rs.getString(2));
                 aluno.setNome(rs.getString(3));
                 aluno.setNascimento(rs.getDate(4).toLocalDate());

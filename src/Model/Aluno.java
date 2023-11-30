@@ -4,16 +4,16 @@ import java.time.LocalDate;
 
 public class Aluno {
 
-    String id;
+    long id;
     String ra;
     String nome;
     LocalDate nascimento;
 
-    public String getId() {
+    public long getId() {
         return id;
     }
 
-    public Aluno setId(String id) {
+    public Aluno setId(long id) {
         this.id = id;
         return (this);
     }

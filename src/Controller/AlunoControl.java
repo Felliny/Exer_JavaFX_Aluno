@@ -20,19 +20,10 @@ public class AlunoControl {
 
     AlunoDAOImplementation alunoDAOImplementatio= new AlunoDAOImplementation();
 
-    public void populateTable(Aluno a) {
-        if (a != null){
-            idAluno.set(a.getId());
-            raAluno.set(a.getRa());
-            nomeAluno.set(a.getNome());
-            nascimentoAluno.set(a.getNascimento());
-        }
-
-    }
 
     public void adicionar(){
         Aluno aluno= new Aluno()
-                        .setId(idAluno.get())
+                        .setId(Long.parseLong(idAluno.get()))
                         .setRa(raAluno.get())
                         .setNome(nomeAluno.get())
                         .setNascimento(nascimentoAluno.get());
@@ -43,6 +34,7 @@ public class AlunoControl {
             raAluno.set("");
             nomeAluno.set("");
         }
+        listAluno.add(aluno);
     }
 
     public void pesquisar(){

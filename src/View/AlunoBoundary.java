@@ -90,11 +90,7 @@ public class AlunoBoundary extends Application {
         });
 
         alunoTableView.getColumns().addAll(columnId, columnRa, columnNome, columnNascimento);
-        alunoTableView.getSelectionModel().selectedItemProperty().addListener(
-                (obs, antigo, novo) -> {
-                    alunoControl.populateTable(novo);
-                }
-        );
+
 
         alunoTableView.setItems(alunoControl.getListAluno());
 
